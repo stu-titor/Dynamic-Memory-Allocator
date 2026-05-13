@@ -1,0 +1,60 @@
+1. optimize check_bins in week 2 
+
+Bin 0:  16 bytes      
+Bin 1:  32 bytes     
+Bin 2:  64 bytes     
+Bin 3:  128 bytes   
+Bin 4:  256 bytes    
+Bin 5:  512 bytes   
+Bin 6: 1024
+Bin 7: 2048
+Bin 8: 4096
+
+./runner -r traces/week1/oom_easy.rep
+./runner -r traces/week1/short1.rep
+
+ Trace                                       Passed      Utilization    Performance (Operations per millisecond)
+------------------------------------------  --------  -------------  ------------------------------------------
+./traces/week2/basic/amptjp-bal.rep         Yes               95.21                                   4451.92
+./traces/week2/basic/amptjp.rep             Yes               95.21                                   6272.85
+./traces/week2/basic/binary-bal.rep         Yes               72.49                                    248.036
+./traces/week2/basic/binary.rep             Yes               72.49                                    250.627
+./traces/week2/basic/binary2-bal.rep        Yes               43.4                                      88.9683
+./traces/week2/basic/binary2.rep            Yes               43.4                                     108.825
+./traces/week2/basic/cccp-bal.rep           Yes               90.7                                    5722.11
+./traces/week2/basic/cccp.rep               Yes               90.7                                    8051.2
+./traces/week2/basic/coalescing-bal.rep     Yes                2.94                                  77837.8
+./traces/week2/basic/coalescing.rep         Yes                2.94                                  77005.3
+./traces/week2/basic/cp-decl-bal.rep        Yes               92.44                                   2973.17
+./traces/week2/basic/cp-decl.rep            Yes               92.44                                   4338.17
+./traces/week2/basic/expr-bal.rep           Yes               92.8                                    2809.4
+./traces/week2/basic/expr.rep               Yes               92.8                                    3670.71
+./traces/week2/basic/random-bal.rep         Yes               85.16                                    527.53
+./traces/week2/basic/random.rep             Yes               85.16                                    529.334
+./traces/week2/basic/random2-bal.rep        Yes               83.34                                    472.674
+./traces/week2/basic/random2.rep            Yes               83.34                                    497.977
+./traces/week2/complex/collatz.rep          Yes               44.02                                 122713
+./traces/week2/complex/fib_iterative.rep    Yes               43.48                                  20125
+./traces/week2/complex/knapsack_simple.rep  Yes               59.66                                  17125
+./traces/week2/complex/modinv.rep           Yes               75.65                                  20600
+./traces/week2/complex/oom.rep              Yes                0                                         0
+./traces/week2/complex/par_exec-bal.rep     Yes               21.47                                   5957.45
+./traces/week2/complex/par_exec.rep         Yes               21.47                                   7764.71
+./traces/week2/complex/par_truepar-bal.rep  Yes               21.23                                   5751.11
+./traces/week2/complex/par_truepar.rep      Yes               21.23                                   7382.98
+./traces/week2/complex/popcount.rep         Yes               56.65                                  18625
+./traces/week2/complex/print.rep            Yes               84.84                                  17062.5
+./traces/week2/complex/random-medium.rep    Yes               80.17                                    413.787
+./traces/week2/complex/rec_sum.rep          Yes               75.78                                  20700
+./traces/week2/complex/reverse_long.rep     Yes               75.23                                  19050
+./traces/week2/complex/sqrt.rep             Yes               43.34                                  14625
+./traces/week2/evil/add_rand.rep            Yes               75.28                                     24.8177
+./traces/week2/evil/long_inputs-bal.rep     Yes               13.94                                  61808.3
+./traces/week2/evil/long_inputs.rep         Yes               13.94                                  62827.4
+Average                                     100.00            61.27                                  17669
+No bump allocation and/or implicit free list detected. ✅
+Please note that we will do manual verification after the assignment is turned in.⚠️
+Deferred coalescing verified (815 events). ✅
+Correct: 15.0/15, perf: 25/20, util: 46.478305418719216/55
+Total Score 87 / 90
+The other ten points come from the writeup after the assignment is turned in.
